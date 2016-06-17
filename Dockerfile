@@ -17,6 +17,7 @@ ADD create-topics.sh /usr/bin/create-topics.sh
 
 # Use "exec" form so that it runs as PID 1 (useful for graceful shutdown)
 CMD ["start-kafka.sh"]
+#Add supervisor code
 
 RUN \
   yum update -y && \
